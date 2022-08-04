@@ -1,0 +1,459 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 1600px;
+    display: relative;
+    margin: auto;
+    background-color: #F8F9FA;
+}
+
+.navbar__container{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 5;
+    background-color: #084C61;
+    box-shadow: 0 -1px 20px black;
+    padding: 0 100px 0 100px;
+}
+
+.navgroup{
+    list-style: none;
+    display: flex;
+}
+
+.navlink a{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: large;
+    margin: 0 20px;
+    line-height: 80px;
+    transition: .5s;
+}
+
+.navlink a:hover, .navlink.active a{
+    opacity: 1;
+    color: #90C2E7;
+
+}
+
+.home__container{
+    width: 100%;
+    padding: 40px 100px 0 100px;
+    position: relative;
+}
+
+.home__social-icon{
+    font-size: 30px;
+    text-decoration: none;
+    color: #084C61;
+    display: flex;
+    transition: .5s;
+    width: 1%;
+}
+
+.home-page {
+    color: black;
+    width: 100%;
+    max-width: 1400px;
+    height: 100vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 40px 100px 40px 100px;
+} 
+
+#home-section{
+    width: 100%;
+    max-width: 1600px;
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+.home-profile{
+    width: 100%;
+    position: relative;
+    display: block;
+    justify-content: flex-start;
+}
+
+.name{
+    font-size: 50px;
+    font-family: 'Trebuchet MS';
+}
+
+.job{
+    font-size: 25px;
+    margin-top: 5px;
+    font-family: 'Trebuchet MS';
+    font-style: italic;
+}
+
+.intro{
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: 'Trebuchet MS';
+}
+
+.home-profile-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  
+    bottom: 0;
+}
+
+.home-img{
+    width: 33%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.home-profile-btn{
+    margin-top: 20px;
+    background-color: #084C61;
+    color: white;
+    padding: 15px 30px;
+    border: 2px solid #084C61;
+    border-radius: 10px;
+
+}
+
+.home-profile-btn:hover{
+    color: #084C61;
+    background-color: transparent;
+    border: 2px solid #084C61;
+}
+
+
+/* SKILL SECTION */
+
+
+.skill-container{
+    position: relative;
+    padding: 0 100px 0 100px;
+    background-color: #E7EAF1;
+    /* box-shadow: 0 -1px 20px black;   */
+    z-index: 2;  
+}
+
+.skill-heading{
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    color: black;
+    font-family: Trebuchet MS;
+} 
+
+.skill-content{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    padding-bottom: 50px;
+}
+
+.skill-card{
+    position: relative;
+    color: black;
+}
+
+.skill-img{
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+.skill-name{
+    font-size: 27px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0 20px;
+}
+
+.skill-desc{
+    font-size: 17px;
+    opacity: 0.5;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.skill-level{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 500;
+    border-radius: 50%;
+    border: 10px solid black;
+}
+
+.skill-card:nth-child(1) .skill-level{
+    background: #ff4f4f28;
+    border-color: #ff4f4f;
+    color: black;
+}
+
+.skill-card:nth-child(2) .skill-level{
+    background: #4fa0ff28;
+    border-color: #4fa0ff;
+    color: black;
+}
+
+.skill-card:nth-child(3) .skill-level{
+    background: #ffed4f28;
+    border-color: #ffed4f;
+    color: black;
+}
+
+.skill-card:nth-child(4) .skill-level{
+    background: #4488ff28;
+    border-color: #4488ff;
+    color: black;
+}
+
+.skill-card:nth-child(5) .skill-level{
+    background: #022e5d28;
+    border-color: #022e5d;
+    color: black;
+}
+
+.skill-card:nth-child(6) .skill-level{
+    background: #1cffff28;
+    border-color: #1cffff;
+    color: black;
+}
+
+.project-heading{
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    color: black;
+}
+
+/* Projects Section */
+
+.projects-section{
+    position: relative;
+    overflow: hidden;
+    padding: 80px;
+    background-color: #F8F9FA;
+}
+
+.project-heading{
+    padding: 0 10vw;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    font-family: Trebuchet MS;
+}
+
+.project-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.project-container::-webkit-scrollbar{
+    display: none;
+}
+
+.project-card{
+    flex: 0 0 auto;
+    width: 100%;
+    height: 350px;
+   
+}
+
+.project-image{
+    position: relative;
+    height: 400px;
+    width: 800px;
+    overflow: hidden;
+}
+
+.project-img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 89%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 20%;
+    text-transform: capitalize;
+    border: 1px solid ;
+    outline: none;
+    background: #084C61;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0.5;
+    color: white;
+    z-index: 2;
+}
+
+.project-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: #084C6128;
+    color: white;
+    border: 1px solid white;
+    opacity: 1;
+}
+
+.project-info{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.project-info h3 {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS';
+}
+
+.project-info p {
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Trebuchet MS';
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.6;
+    text-transform: capitalize;
+    margin: 5px 0;
+    padding: 5px 50px 15px 50px;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F8F9FA 100%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.pre-btn{
+    left: 0;
+}
+
+.nxt-btn{
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.4;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
+
+.collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+}
+
+.collection {
+    position: relative;
+}
+
+.collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(4) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER SECTION */
+
+
+.footer-container{
+    display: flex;
+    position: relative;
+    padding: 20px 100px 20px 100px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #084C61;
+    font-family: 'Trebuchet MS';
+    
+}
+
+
